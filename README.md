@@ -1,6 +1,7 @@
 # react-native-hl-tabs
 
 A beautiful tab for react native
+
 ![alt text](https://raw.githubusercontent.com/huy-lv/react-native-hl-tabs/master/demo.png)
 
 ## Installation
