@@ -1,17 +1,24 @@
 import * as React from 'react';
 import { StyleSheet, View, Text } from 'react-native';
-import HlTabs from 'react-native-hl-tabs';
+import HLTabs from 'react-native-hl-tabs';
 
 export default function App() {
-  const [result, setResult] = React.useState<number | undefined>();
+  const [selectedIndex, setSelectedIndex] = React.useState<number>(0);
 
-  React.useEffect(() => {
-    HlTabs.multiply(3, 7).then(setResult);
-  }, []);
+  const titles: string[] = ['Tab1', 'Tab322333322', 'Tab3'];
+
+  const onPressTab = (index: number) => {
+    setSelectedIndex(index);
+  };
 
   return (
     <View style={styles.container}>
-      <Text>Result: {result}</Text>
+      <Text>Result: </Text>
+      <HLTabs
+        titles={titles}
+        onPress={onPressTab}
+        selectedIndex={selectedIndex}
+      />
     </View>
   );
 }
@@ -19,7 +26,6 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: 'center',
     justifyContent: 'center',
   },
 });
