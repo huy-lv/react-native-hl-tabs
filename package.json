@@ -25,7 +25,7 @@
     "lint": "eslint \"**/*.{js,ts,tsx}\"",
     "prepare": "bob build",
     "release": "release-it",
-    "example": "yarn --cwd example",
+    "example": "cd example && expo start",
     "pods": "cd example && pod-install --quiet",
     "bootstrap": "yarn example && yarn && yarn pods"
   },
@@ -35,7 +35,7 @@
     "android"
   ],
   "repository": "https://github.com/huy-lv/react-native-hl-tabs",
-  "author": "huylv-teko <huylv177@gmail.com> (https://github.com/huy-lv)",
+  "author": "huy-lv <huylv177@gmail.com> (https://github.com/huy-lv)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/huy-lv/react-native-hl-tabs/issues"

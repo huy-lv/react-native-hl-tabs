@@ -46,7 +46,7 @@ const HLTabs: React.FC<HLTabsProps> = ({
             styles.seperator,
             {
               backgroundColor: seperatorShouldHide
-                ? inactiveColor
+                ? 'transparent'
                 : seperatorColor,
             },
           ]}
