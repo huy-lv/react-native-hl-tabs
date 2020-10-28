@@ -78,6 +78,7 @@
       "@commitlint/config-conventional"
     ]
   },
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
   "release-it": {
     "git": {
       "commitMessage": "chore: release ${version}",
